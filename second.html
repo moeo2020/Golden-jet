@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/second.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>تسجيل دخول</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">كلمة المرور:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">تسجيل الدخول</button>
+        </form>
+        <div class="switch-link">
+            <span>ليس لديك حساب؟ <a href="#" id="switch-to-register">إنشاء حساب</a></span>
+        </div>
+    </div>
+
+    <div class="container" style="display: none;">
+        <h2>إنشاء حساب</h2>
+        <form id="register-form">
+            <div class="form-group">
+                <label for="new-email">البريد الإلكتروني:</label>
+                <input type="email" id="new-email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="new-password">كلمة المرور:</label>
+                <input type="password" id="new-password" name="password" required>
+            </div>
+            <button type="submit" class="btn">إنشاء الحساب</button>
+        </form>
+        <div class="switch-link">
+            <span>لديك حساب؟ <a href="#" id="switch-to-login">تسجيل دخول</a></span>
+        </div>
+    </div>
+    <script src="second.js"></script>
+</body>
+</html>

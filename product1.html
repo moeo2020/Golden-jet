@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produvt1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/product.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a class="active " href="main.html">الصفحة الرئيسية</a></li>
+                    <li><a href="about.html">حول</a></li>
+                    <li><a href="main.html#products">منتجاتنا</a></li>
+                    <li><a href="#footer">للتواصل</a></li>
+                </ul>
+            </nav>
+
+            <!-- أضف عناصر التنقل الأخرى هنا -->
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="ابحث عن منتج..." onfocus="showList()"
+                    onblur="hideList()">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <ul id="product-list">
+                    <li><a href="product1.html">
+                            <h3>عصير أناناس</h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="product2.html">
+                            <h3>عصير تفاح</h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="product3.html">
+                            <h3>عصير رمان</h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="product4.html">
+                            <h3>عصير برتقال</h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="product5.html">
+                            <h3>عصير مانجا</h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="product6.html">
+                            <h3>عصير جوافة</h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="product7.html">
+                            <h3>عصير فراولة</h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="product8.html">
+                            <h3>عصير عنب</h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <div class="golden-logo">
+
+        <img src="images/photo_2024-06-11_19-50-46.jpg" alt="">
+    </div>
+    <div class="product">
+        <div class="image">
+            <img class="product-image" src="images/product.png" alt="">
+        </div>
+        <div class="info">
+            <h2 class="product-name">عصائر أناناس</h2>
+            <h4>
+
+                استمتع بلذة العصير الطازج الفريد من تشكيلتنا الغنية بالنكهات الطبيعية. يتميز عصيرنا بتركيبة فريدة تجمع
+                بين الطعم اللذيذ والقيم الغذائية العالية، فهو مصدر مثالي للطاقة والفيتامينات اللازمة ليومك. اخترعصيرنا
+                الطازج لتجربة منعشة ومميزة لكل لحظة في يومك.
+
+            </h4>
+            <p class="price"> $8.99 <span class="old-price">$9.99</span></p>
+
+            <div class="quantity">
+                <button onclick="decrement(this)">-</button>
+                <input type="text" value="1" readonly>
+                <button onclick="increment(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart(this)">اضف للسلة</button>
+        </div>
+    </div>
+
+
+
+    <div class="footer" id="footer">
+        <div class="icons">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping card"></i></a>
+        </div>
+        <div class="main-heading">
+            <div class="head_text">
+                <h2>تواصل معنا</h2>
+
+            </div>
+            <div class="container">
+                <div class="box">
+                    <h3>زورونا على</h3>
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=61560696959549&mibextid=ZbWKwL" class="facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <span>Facebook</span>
+                        </li>
+                        <li>
+                            <a href="https://x.com/GoldenJet150?t=4kf0tOPhbbgH7__0P2lDWQ&s=09" class="twitter">
+                                <i class="fa-brands fa-x-twitter"></i>
+
+                            </a>
+                            <span>X-Twitter</span>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/golden_jet155?igsh=bWdkdmNzZ3AyemZ4" class="instagram">
+                                <i class="fab fa-instagram"></i>
+
+                            </a>
+                            <span>Instagram</span>
+                        </li>
+                        <li>
+                            <a href="https://www.snapchat.com/add/golden_jet150?share_id=-78s15b7TJY&locale=ar-SA-u-nu-latn" class="snap_chat">
+                                <i class="fa-brands fa-snapchat"></i>
+
+                            </a>
+                            <span>snapchat</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>للدعم الفني</h3>
+                    <ul class="links">
+                        <li><a href="#">Important Link 1</a></li>
+                        <li><a href="#">Important Link 2</a></li>
+                        <li><a href="#">Important Link 3</a></li>
+                        <li><a href="#">Important Link 4</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h3>معلومات التواصل</h3>
+                    <div class="line">
+                        <div class="info"> مصر, بورسعيد, المنطقة الصناعية, جنوب الرسوة, مصنع رقم 93 </div>
+                        <div class="one">
+
+                            <span>+2 010 19 767 947</span>
+                            <span>+2 010 60 4748 22</span>
+                            <span>+2 066 37 57 807</span>
+                        </div>
+                        <div class="info"> الامارات العربية المتحدة, عجمان </div>
+                        <span>+971 505 49 46 73</span>
+                        <span>+971 50 840 75 20</span>
+                        <span>+971 2 56 33 140</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>العنوان</h3>
+                    <ul class="adress">
+                        <div class="frist">
+                        <div class="info"> مصر, بورسعيد, المنطقة الصناعية, جنوب الرسوة, مصنع رقم 93 </div>
+                        <li><a href="#"><img src="images/map.png" alt=""></a></li>
+                    </div>
+                    <div class="info"> الامارات العربية المتحدة, عجمان </div>
+                        <li><a href="#"><img src="images/map.png" alt=""></a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">جميع الحقوق محفوظة &copy; لدى شركة <span>جولدن جت</span></p>
+    </div>
+
+
+    <script src="product.js"></script>
+</body>
+
+</html>

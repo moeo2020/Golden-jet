@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLDEN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/stylee.css">
+
+
+    <!-- مكتبة Slick CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <!-- مكتبة jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- مكتبة Slick JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a class="active" href="#">الصفحة الرئيسية</a></li>
+                    <li><a href="about.html">حول</a></li>
+                    <li><a href="#products">منتجاتنا</a></li>
+                    <li><a href="#footer">للتواصل</a></li>
+                </ul>
+            </nav>
+
+            <!-- أضف عناصر التنقل الأخرى هنا -->
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="ابحث عن منتج..." onfocus="showList()"
+                    onblur="hideList()">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <ul id="product-list">
+                    <li><a href="product1.html">
+                            <h3>عصير أناناس </h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="product2.html">
+                            <h3>عصير تفاح</h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="product3.html">
+                            <h3>عصير رمان </h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="product4.html">
+                            <h3>عصير برتقال </h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="product5.html">
+                            <h3>عصير مانجا </h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="product6.html">
+                            <h3>عصير جوافة </h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="product7.html">
+                            <h3>عصير فراولة</h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+                    <li><a href="product8.html">
+                            <h3>عصير عنب </h3>
+                            <img src="images/IMG-20240601-WA0003.png" alt="">
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <div class="golden-logo">
+
+        <img src="images/photo_2024-06-11_19-50-46.jpg" alt="">
+    </div>
+    <div class="landing">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    <div class="products" id="products">
+        <div class="main-heading">
+            <div class="head_text">
+                <h2>منتجاتنا</h2>
+                <p>تسوق معنا أفضل المنتجات بأفضل الأسعار</p>
+            </div>
+        </div>
+
+        <div class="products-section slider">
+
+
+
+            <div class="product" id="product1">
+                <a href="product1.html">
+                    <div class="image">
+                        <img class="product-image" src="images/product.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="price"> $8.99 <span class="old-price">$9.99</span></p>
+                        <h3 class="product-name">عصائر أناناس</h3>
+
+                    </div>
+                </a>
+                <div class="quantity">
+                    <button onclick="decrement(this)">-</button>
+                    <input type="text" value="1" readonly>
+                    <button onclick="increment(this)">+</button>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">اضف للسلة</button>
+
+            </div>
+
+            <!-- يمكنك إضافة المزيد من المنتجات هنا -->
+            <div class="product" id="product2">
+                <a href="product2.html">
+                    <div class="image">
+                        <img class="product-image" src="images/product.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="price"> $8.99 <span class="old-price">$9.99</span></p>
+                        <h3 class="product-name">عصائر تفاح</h3>
+
+                    </div>
+                </a>
+                <div class="quantity">
+                    <button onclick="decrement(this)">-</button>
+                    <input type="text" value="1" readonly>
+                    <button onclick="increment(this)">+</button>
+                </div>
+
+                <button class="add-to-cart" onclick="addToCart(this)">اضف للسلة</button>
+
+            </div>
+            <div class="product" id="product3">
+                <a href="product3.html">
+                    <div class="image">
+                        <img class="product-image" src="images/product.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="price"> $8.99 <span class="old-price">$9.99</span></p>
+                        <h3 class="product-name">عصائر رمان</h3>
+
+                    </div>
+                </a>
+                <div class="quantity">
+                    <button onclick="decrement(this)">-</button>
+                    <input type="text" value="1" readonly>
+                    <button onclick="increment(this)">+</button>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">اضف للسلة</button>
+
+            </div>
+            <div class="product" id="product4">
+                <a href="product4.html">
+                    <div class="image">
+                        <img class="product-image" src="images/product.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="price"> $8.99 <span class="old-price">$9.99</span></p>
+                        <h3 class="product-name">عصائر برتقال</h3>
+
+                    </div>
+                </a>
+                <div class="quantity">
+                    <button onclick="decrement(this)">-</button>
+                    <input type="text" value="1" readonly>
+                    <button onclick="increment(this)">+</button>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">اضف للسلة</button>
+
+            </div>
+            <div class="product" id="product5">
+                <a href="product5.html">
+                    <div class="image">
+                        <img class="product-image" src="images/product.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="price"> $8.99 <span class="old-price">$9.99</span></p>
+                        <h3 class="product-name">عصائر مانجا</h3>
+
+                    </div>
+                </a>
+                <div class="quantity">
+                    <button onclick="decrement(this)">-</button>
+                    <input type="text" value="1" readonly>
+                    <button onclick="increment(this)">+</button>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">اضف للسلة</button>
+
+            </div>
+            <div class="product" id="product6">
+                <a href="product6.html">
+                    <div class="image">
+                        <img class="product-image" src="images/product.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="price"> $8.99 <span class="old-price">$9.99</span></p>
+                        <h3 class="product-name">عصائر جوافة</h3>
+
+                    </div>
+                </a>
+                <div class="quantity">
+                    <button onclick="decrement(this)">-</button>
+                    <input type="text" value="1" readonly>
+                    <button onclick="increment(this)">+</button>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">اضف للسلة</button>
+
+            </div>
+            <div class="product" id="product7">
+                <a href="product7.html">
+                    <div class="image">
+                        <img class="product-image" src="images/product.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="price"> $8.99 <span class="old-price">$9.99</span></p>
+                        <h3 class="product-name">عصائر فراولة</h3>
+
+                    </div>
+                </a>
+                <div class="quantity">
+                    <button onclick="decrement(this)">-</button>
+                    <input type="text" value="1" readonly>
+                    <button onclick="increment(this)">+</button>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">اضف للسلة</button>
+
+            </div>
+            <div class="product" id="product8">
+                <a href="product8.html">
+                    <div class="image">
+                        <img class="product-image" src="images/product.png" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="price"> $8.99 <span class="old-price">$9.99</span></p>
+                        <h3 class="product-name">عصائر عنب</h3>
+
+                    </div>
+                </a>
+                <div class="quantity">
+                    <button onclick="decrement(this)">-</button>
+                    <input type="text" value="1" readonly>
+                    <button onclick="increment(this)">+</button>
+                </div>
+                <button class="add-to-cart" onclick="addToCart(this)">اضف للسلة</button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+
+    </div>
+    </div>
+    <div class="features">
+        <div class="main-heading">
+            <div class="head_text">
+                <h2>لماذا نحن؟</h2>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="feat">
+                <p class="logo logo3"><i class="fa-solid fa-ranking-star"></i></p>
+                <h2>جودة عالية</h2>
+                <p>نفخر بتقديم منتجات مصنوعة بأعلى معايير الدقة والجودة </p>
+               <p> لترضي توقعات عملائنا</p>
+            </div>
+            <div class="feat">
+                <p class="logo logo2"><i class="fa-regular fa-credit-card"></i></p>
+                <h2>أفضل الأسعار</h2>
+                <p>نحن ملتزمون بتقديم أفضل الأسعار في الأسواق</p>
+                <p>لضمان الحصول علي أعلي قيمة مقابل المال</p>
+            </div>
+
+            <div class="feat">
+                <p class="logo logo1"><i class="fa-solid fa-truck-fast"></i></p>
+                <h2>سرعة في التوصيل</h2>
+                <p>توصيل على مدار الساعة لتلبية رغبات عملائنا</p>
+                <p>التغطية الكاملة لجميع الإمارات</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="footer" id="footer">
+        <div class="icons">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping card"></i></a>
+        </div>
+        <div class="main-heading">
+            <div class="head_text">
+                <h2>تواصل معنا</h2>
+
+            </div>
+            <div class="container">
+                <div class="box">
+                    <h3>زورونا على</h3>
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=61560696959549&mibextid=ZbWKwL" class="facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <span>Facebook</span>
+                        </li>
+                        <li>
+                            <a href="https://x.com/GoldenJet150?t=4kf0tOPhbbgH7__0P2lDWQ&s=09" class="twitter">
+                                <i class="fa-brands fa-x-twitter"></i>
+
+                            </a>
+                            <span>X-Twitter</span>
+                        </li>
+
+                        <li>
+                            <a href="https://www.instagram.com/golden_jet155?igsh=bWdkdmNzZ3AyemZ4" class="instagram">
+                                <i class="fab fa-instagram"></i>
+
+                            </a>
+                            <span>Instagram</span>
+                        </li>
+                        <li>
+                            <a href="https://www.snapchat.com/add/golden_jet150?share_id=-78s15b7TJY&locale=ar-SA-u-nu-latn" class="snap_chat">
+                                <i class="fa-brands fa-snapchat"></i>
+
+                            </a>
+                            <span>Snapchat</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>للدعم الفني</h3>
+                    <ul class="links">
+                        <li><a href="#">Important Link 1</a></li>
+                        <li><a href="#">Important Link 2</a></li>
+                        <li><a href="#">Important Link 3</a></li>
+                        <li><a href="#">Important Link 4</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <h3>معلومات التواصل</h3>
+                    <div class="line">
+                        <div class="info"> مصر, بورسعيد, المنطقة الصناعية, جنوب الرسوة, مصنع رقم 93 </div>
+                        <div class="one">
+
+                            <span>+2 010 19 767 947</span>
+                            <span>+2 010 60 4748 22</span>
+                            <span>+2 066 37 57 807</span>
+                        </div>
+                        <div class="info"> الامارات العربية المتحدة, عجمان </div>
+                        <span>+971 505 49 46 73</span>
+                        <span>+971 50 840 75 20</span>
+                        <span>+971 2 56 33 140</span>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>العنوان</h3>
+                    <ul class="adress">
+                        <div class="frist">
+                        <div class="info"> مصر, بورسعيد, المنطقة الصناعية, جنوب الرسوة, مصنع رقم 93 </div>
+                        <li><a href="#"><img src="images/map.png" alt=""></a></li>
+                    </div>
+                    <div class="info"> الامارات العربية المتحدة, عجمان </div>
+                        <li><a href="#"><img src="images/map.png" alt=""></a></li>
+
+
+                    </ul>
+                </div>
+
+                
+            </div>
+        </div>
+        <p class="copyright">جميع الحقوق محفوظة &copy; لدى شركة <span>جولدن جت</span></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
